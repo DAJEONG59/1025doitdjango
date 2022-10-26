@@ -6,6 +6,7 @@
     <title> 김다정의 홈페이지</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css" rel="stylesheet"
         type="text/css">
+
     <script type="text/javascript">
         function doSomething() {
             let a = document.getElementById('inputA').value;
@@ -15,8 +16,13 @@
             document.getElementById("valueC").innerHTML = Number(a) + Number(b);
 
         }
+        function whatTimeIsIt() {
+            alert(new Date());
+
+        }
+    </script>    
 </head>
-            <body>
+            <ㅗ>
                 <nav>
                     <a href="./INDEX2.html">Home</a>
                     <a href="./blog_list.html">Blog</a>
@@ -30,12 +36,14 @@
                 <h4>네번째 크기 헤드라인</h4>
                 <h5>다섯번째 크기 헤드라인</h5>
 
+                <button onclick="whatTimeIsIt()">현재시간</button>
+            <hr />
                 <label for="inputA">a</label>
                 <input id="inputA" value=1 onkeyup="doSomething()">
                 <label for="inputB">b</label>
                 <input id="inputA" value=2 onkeyup="doSomething()">
 
-                <p><span id="valueA">1</span></p>
+                <p><span id="valueA">1</span> + <span id="valueB">2</span> = <span id="valueC">3</span>입니다.</p>
 
 
                 <p>문단은 p로 쓰세요</p>
